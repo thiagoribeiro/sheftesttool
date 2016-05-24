@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c88e5f74-9d03-4b40-bf0d-6802aaf94a80}</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>shef.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>2.6</InterpreterVersion>
+    <Name>SHEF</Name>
+    <RootNamespace>SHEF</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\AutoCommandLine.py" />
+    <Compile Include="app\AutomateCommandLine.py" />
+    <Compile Include="app\Camera.py" />
+    <Compile Include="app\func.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="shef.py" />
+    <Compile Include="app\about.py" />
+    <Compile Include="app\auto.py" />
+    <Compile Include="app\automate.py" />
+    <Compile Include="app\cfg.py" />
+    <Compile Include="app\GenericView.py" />
+    <Compile Include="app\interface.py" />
+    <Compile Include="app\jsonRPC.py" />
+    <Compile Include="app\MessageBox.py" />
+    <Compile Include="app\Remote.py" />
+    <Compile Include="app\Serial.py" />
+    <Compile Include="app\Window.py" />
+    <Compile Include="app\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

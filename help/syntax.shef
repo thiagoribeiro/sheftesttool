@@ -1,0 +1,78 @@
+
+1. Comments /#title
+  Everything after # are comments and won't executed.
+  You can start a line with a #.
+
+2. Syntax /#title
+  Each line may have only one command.
+  A command line have 3 arguments.
+  * Type of command (key up, key press, key down, none or show a message using: up, press, down, none or msg.
+  * Key used (power, chanup, list, exit, dash, ... or content of message.
+  * Time in seconds to wait after the command be executed or -1 to show a box waiting for a click. The time can uses floating point, like 0.6 seconds.
+  This arguments has an order and a character to divide it. Divide separator is a tab.
+  The order is: [time]	[type]		[key]
+  If you don't set a time, the system will determine -1 as default, showing the wait box.
+
+3. Special Keys /#title
+  msg		
+  snapshot	 
+
+4. Keys /#title
+ enter
+ dash
+ 0
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ guide
+ active
+ list
+ exit
+ up
+ right
+ down
+ left
+ select
+ back
+ menu
+ info
+ red
+ green
+ yellow
+ blue
+ chanup
+ chandown
+ prev
+ pause
+ rew
+ replay
+ stop
+ advance
+ ffwd
+ record
+ play
+ power
+ poweron
+ poweroff
+ format
+
+5. Examples /#title
+ #The line below will show a message and wait for 4 seconds
+ 4	msg	Starting an test example
+ 1	msg	Setting to the channel 38
+ 2	press	3
+ -1	press	8
+
+ #The line above wait for a click to continue
+ 3	down	guide #show the guide
+ 2	down	down  #go to next channel
+ 2	none	down  #go to next channel again
+	down	enter #select the channel
+ 5	up	power #do nothing
+ 3	msg	finishing...

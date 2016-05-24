@@ -1,0 +1,11 @@
+
+Arguments /#title
+
+You can start thi application with some arguments:
+ -i [IP]		--ip [IP]			Put the ip on the correct box
+ -c			--console			
+ -q [FILE]		--queue [FILE]
+
+ Example  /#title
+  shef.py -c -i 10.0.0.0 automate.shef
+  shef.py -c -q ips.txt automate.shef

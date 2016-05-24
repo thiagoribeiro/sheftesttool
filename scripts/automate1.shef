@@ -1,0 +1,13 @@
+# time	command		key/msg
+4	msg	Starting an test example
+1	msg	Setting to the channel 38
+2	press	3
+
+0	press	8
+#The line above wait for a click to continue
+3	down	guide #show the guide
+2	down	down  #go to next channel
+2	none	down  #go to next channel again
+	down	enter #select the channel
+5	up	power #do nothing
+3	msg	finishing...

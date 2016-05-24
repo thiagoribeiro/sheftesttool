@@ -1,0 +1,9 @@
+# time	command		key/msg
+2	up	dash
+0.6	press	3
+2	press	7
+0	msg	abrindo o guia
+0	press	guide
+1	press	down
+1	press	down
+2	down	enter
